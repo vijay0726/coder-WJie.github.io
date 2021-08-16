@@ -6,15 +6,17 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="https://coder-WJie.github.io">
-  <title>Archives: 2021 | 昨日青空的个人网站</title>
+  <title>Promise-异步编程的一种解决方案 | 昨日青空的个人网站</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="理科在读">
-<meta property="og:type" content="website">
-<meta property="og:title" content="昨日青空的个人网站">
-<meta property="og:url" content="https://coder-wjie.github.io/archives/2021/index.html">
+  <meta name="description" content="Promise-异步编程的一种解决方案1.Promise的含义Promise是异步编程的一种解决方案，比传统的解决方案——回调函数和事件更合理且更强大。简单来说，Promise是一个容器，里面包含着一个未来才会结束的事件。从语法上，promise是一个对象，从它可以获取异步操作的消息。 1.1 Promise 的特点Promise有两个特点。    1. promise对象的状态不受外界影响。pr">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Promise-异步编程的一种解决方案">
+<meta property="og:url" content="https://coder-wjie.github.io/2021/08/16/Promise-%E5%BC%82%E6%AD%A5%E7%BC%96%E7%A8%8B%E7%9A%84%E4%B8%80%E7%A7%8D%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88/index.html">
 <meta property="og:site_name" content="昨日青空的个人网站">
-<meta property="og:description" content="理科在读">
+<meta property="og:description" content="Promise-异步编程的一种解决方案1.Promise的含义Promise是异步编程的一种解决方案，比传统的解决方案——回调函数和事件更合理且更强大。简单来说，Promise是一个容器，里面包含着一个未来才会结束的事件。从语法上，promise是一个对象，从它可以获取异步操作的消息。 1.1 Promise 的特点Promise有两个特点。    1. promise对象的状态不受外界影响。pr">
 <meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2021-08-16T09:37:17.742Z">
+<meta property="article:modified_time" content="2021-08-16T09:38:05.255Z">
 <meta property="article:author" content="昨日青空">
 <meta property="article:tag" content="前端，js,vue,javascript,html,css,程序员,工程师,编程,代码,nodejs,electron">
 <meta name="twitter:card" content="summary">
@@ -157,103 +159,183 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
+            <article id="post-Promise-异步编程的一种解决方案" class="article article-type-post " itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
   
+    <h1 class="article-title" itemprop="name">
+      Promise-异步编程的一种解决方案
+    </h1>
   
-    
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2021" class="archive-year">2021</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2021/08/16/Promise-%E5%BC%82%E6%AD%A5%E7%BC%96%E7%A8%8B%E7%9A%84%E4%B8%80%E7%A7%8D%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88/" class="archive-article-date">
+
+        
+        <a href="/2021/08/16/Promise-%E5%BC%82%E6%AD%A5%E7%BC%96%E7%A8%8B%E7%9A%84%E4%B8%80%E7%A7%8D%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88/" class="archive-article-date">
   	<time datetime="2021-08-16T09:37:17.742Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-08-16</time>
 </a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2021/08/16/Promise-%E5%BC%82%E6%AD%A5%E7%BC%96%E7%A8%8B%E7%9A%84%E4%B8%80%E7%A7%8D%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88/">Promise-异步编程的一种解决方案</a>
-    </h1>
-  
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="Promise-异步编程的一种解决方案"><a href="#Promise-异步编程的一种解决方案" class="headerlink" title="Promise-异步编程的一种解决方案"></a>Promise-异步编程的一种解决方案</h1><h2 id="1-Promise的含义"><a href="#1-Promise的含义" class="headerlink" title="1.Promise的含义"></a>1.Promise的含义</h2><p>Promise是异步编程的一种解决方案，比传统的解决方案——回调函数和事件更合理且更强大。<br>简单来说，Promise是一个容器，里面包含着一个未来才会结束的事件。从语法上，promise是一个对象，从它可以获取异步操作的消息。</p>
+<h3 id="1-1-Promise-的特点"><a href="#1-1-Promise-的特点" class="headerlink" title="1.1 Promise 的特点"></a>1.1 Promise 的特点</h3><p>Promise有两个特点。<br>    1. promise对象的状态不受外界影响。promise有三种状态，Pending(进行中)，Fulfilled(已完成)，Rejected(已失败) 只有异步操作的结果才能决定当前是哪种状态，其他操作无法改变。<br>    2. 一旦状态改变就不会再变。任何时候都可以得到这个结果。<br>        一般状态改变有两种可能：Pending -&gt; Fulfilled 或 Pending -&gt; Rejected<br>        一旦改变，状态就定型了，也被称为Resolved，会一直保持这个状态。<br>    而这与事件完全不同，错过了事件触发的时机，就再也监听不到了，而Promise可以一直监听状态。</p>
+<h2 id="2-Promise的基本用法"><a href="#2-Promise的基本用法" class="headerlink" title="2. Promise的基本用法"></a>2. Promise的基本用法</h2><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> promise = <span class="keyword">new</span> <span class="built_in">Promise</span>(<span class="function"><span class="keyword">function</span>(<span class="params">resolve,reject</span>) </span>&#123;</span><br><span class="line">	<span class="comment">// 一些代码...</span></span><br><span class="line">	<span class="keyword">if</span>(<span class="comment">/* 异步操作成功*/</span>)&#123;</span><br><span class="line">	resolve(value)</span><br><span class="line">&#125; )<span class="keyword">else</span>&#123;</span><br><span class="line">	reject(error)</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>Promise构造函数接受一个函数作为参数，这个函数有两个参数，分别为resolve，reject<br>这两个参数也为函数，由JavaScript引擎提供，不用自己部署。<br>    <strong>resolve函数的作用是</strong>，将Promise对象的状态由 Pending 变为 Fulfilled 在异步操作成功时调用，并将异步操作的结果作为参数返回出去（value）。<br>    <strong>相对的，reject的作用是</strong>，将Promise对象的状态由 Pending 变为 Rejected 在异步操作失败时调用，并抛出错误（error）。</p>
+<h3 id="2-1-then（）方法"><a href="#2-1-then（）方法" class="headerlink" title="2.1 then（）方法"></a>2.1 then（）方法</h3><p>Promise实例生成后，可以用then()方法为实例对象指定 resolve 和 reject 的具体操作。<br>如下：</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// promise 为上一段代码的Promise实例对象</span></span><br><span class="line">promise.then(<span class="function"><span class="keyword">function</span>(<span class="params">value</span>)</span>&#123;</span><br><span class="line">	<span class="comment">//fulfilled状态下执行的代码</span></span><br><span class="line">&#125;,<span class="function"><span class="keyword">function</span>(<span class="params">error</span>)</span>&#123;</span><br><span class="line">	<span class="comment">// rejected状态下执行的代码</span></span><br><span class="line">	<span class="comment">// 一般情况下这里会抛出错误</span></span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>
+<p>then()方法可以指定 resolve 和 reject ，第一个参数为 resolve，第二个参数为 reject，第二个参数<strong>可选</strong>。但是一般情况下只在then()中为 resolve 指定操作，不会为 reject 指定具体操作。</p>
+<h3 id="2-2-catch-方法"><a href="#2-2-catch-方法" class="headerlink" title="2.2 catch()方法"></a>2.2 catch()方法</h3><p>上面说到，一般不会在then()中指定 reject ，这里说明 reject 的定义时机。<br>catch()方法专门用来指定发生错误时的回调函数。</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">Promise</span>.prototype.catch 方法的别名是 .then(<span class="literal">null</span>,rejection)</span><br></pre></td></tr></table></figure>
+<p>调用方式</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">promise.catch(<span class="function"><span class="keyword">function</span>(<span class="params">error</span>)</span>&#123;</span><br><span class="line">	<span class="built_in">console</span>.log(<span class="string">&#x27;发生错误！&#x27;</span>)</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>
+<h3 id="2-3-then-和-catch（）的综合使用"><a href="#2-3-then-和-catch（）的综合使用" class="headerlink" title="2.3 then() 和 catch（）的综合使用"></a>2.3 then() 和 catch（）的综合使用</h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 第一种使用方式</span></span><br><span class="line">promise.then(<span class="function"><span class="keyword">function</span>(<span class="params">value</span>)</span>&#123;</span><br><span class="line">	<span class="comment">//fulfilled状态下执行的代码</span></span><br><span class="line">&#125;,<span class="function"><span class="keyword">function</span>(<span class="params">error</span>)</span>&#123;</span><br><span class="line">	<span class="comment">// rejected状态下执行的代码</span></span><br><span class="line">	<span class="comment">// 一般情况下这里会抛出错误</span></span><br><span class="line">&#125;)</span><br><span class="line"><span class="comment">// 第二种使用方式</span></span><br><span class="line">promise.then(<span class="function"><span class="keyword">function</span>(<span class="params">data</span>)</span>&#123;</span><br><span class="line">	<span class="comment">// success</span></span><br><span class="line">&#125;).catch(<span class="function"><span class="keyword">function</span>(<span class="params">err</span>)</span>&#123;</span><br><span class="line">	<span class="comment">// error</span></span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>
+<p>因为promise对象的错误具有冒泡性质，错误会一直向后传递，直到捕获为止。后一个catch()总会捕捉到前面的错误，如果按照第一种使用方式，若是 resolve 或 reject 中同样出现了错误，这时由于后面再没有catch()来捕获异常，这个错误将成为无法捕获的错误。<br>所以说，第二种方法优于第一种，理由是第二种写法可以捕获前面then方法的异常，也更接近同步的写法（try/catch）</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">promise..catch(<span class="function"><span class="keyword">function</span>(<span class="params">err</span>)</span>&#123;</span><br><span class="line">	<span class="comment">// error</span></span><br><span class="line">	&#125;).then(<span class="function"><span class="keyword">function</span>(<span class="params">data</span>)</span>&#123;</span><br><span class="line">	<span class="comment">// success</span></span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>
 
-        <div class="article-info info-on-right">
-          
-          
+<p><strong>then方法和 catch方法都返回的是promise对象，</strong>因此后面还可以接着调用then()或catch()<br>如上代码，若是catch()方法在then()之前，上面代码因为没有报错而跳过 catch 方法，直接执行了后面的 then 方法。 此时要是 then 方法里面报错，就与前面的 catch 无关了。<strong>因此catch方法应尽量放在then方法后。</strong></p>
+<h2 id="3-Promise的其他常用方法"><a href="#3-Promise的其他常用方法" class="headerlink" title="3. Promise的其他常用方法"></a>3. Promise的其他常用方法</h2><p>待总结。。。</p>
 
+      
+
+      
+        <div class="page-reward">
+          <a href="javascript:;" class="page-reward-btn tooltip-top">
+            <div class="tooltip tooltip-east">
+            <span class="tooltip-item">
+              赏
+            </span>
+            <span class="tooltip-content">
+              <span class="tooltip-text">
+                <span class="tooltip-inner">
+                  <p class="reward-p"><i class="icon icon-quo-left"></i>谢谢你请我吃糖果<i class="icon icon-quo-right"></i></p>
+                  <div class="reward-box">
+                    
+                    
+                  </div>
+                </span>
+              </span>
+            </span>
+          </div>
+          </a>
         </div>
-        <div class="clearfix"></div>
-    </header>
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+
+      
+        
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
+        </div>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="//pan.baidu.com/share/qrcode?url=https://coder-wjie.github.io/2021/08/16/Promise-%E5%BC%82%E6%AD%A5%E7%BC%96%E7%A8%8B%E7%9A%84%E4%B8%80%E7%A7%8D%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
+      
+      <div class="clearfix"></div>
+    </div>
   </div>
 </article>
+
   
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2021/08/16/HTTP%E5%8D%8F%E8%AE%AE%E7%9B%B8%E5%85%B3/" class="archive-article-date">
-  	<time datetime="2021-08-16T09:32:34.354Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-08-16</time>
-</a>
+<nav id="article-nav">
+  
+  
+    <a href="/2021/08/16/HTTP%E5%8D%8F%E8%AE%AE%E7%9B%B8%E5%85%B3/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">HTTP协议相关</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
         </div>
-    	 
+        
+        
+    </div>
+</aside>
+
+
+
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2021/08/16/HTTP%E5%8D%8F%E8%AE%AE%E7%9B%B8%E5%85%B3/">HTTP协议相关</a>
-    </h1>
+  
+  
+  <div id="cloud-tie-wrapper" class="cloud-tie-wrapper"></div>
+<script>
+  var cloudTieConfig = {
+    url: "https://coder-WJie.github.io/2021/08/16/Promise-%E5%BC%82%E6%AD%A5%E7%BC%96%E7%A8%8B%E7%9A%84%E4%B8%80%E7%A7%8D%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88/", 
+    sourceId: "Promise-异步编程的一种解决方案",
+    productKey: "true",
+    target: "cloud-tie-wrapper"
+  };
+</script>
+<script src="//img1.cache.netease.com/f2e/tie/yun/sdk/loader.js"></script>
   
 
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2021/08/16/hello-world/" class="archive-article-date">
-  	<time datetime="2021-08-16T03:36:05.173Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-08-16</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2021/08/16/hello-world/">Hello World</a>
-    </h1>
   
 
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-  
-    </div></section>
   
 
-    
+  
 
 
           </div>
@@ -276,8 +358,8 @@
 	var yiliaConfig = {
 		mathjax: false,
 		isHome: false,
-		isPost: false,
-		isArchive: true,
+		isPost: true,
+		isArchive: false,
 		isTag: false,
 		isCategory: false,
 		open_in_new: false,
