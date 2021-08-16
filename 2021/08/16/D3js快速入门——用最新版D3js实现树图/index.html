@@ -23,7 +23,7 @@
 <meta property="og:image" content="https://img-blog.csdnimg.cn/0a22f706ad904c078fc0bab906951439.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80NjU2NzQyOA==,size_16,color_FFFFFF,t_70">
 <meta property="og:image" content="https://img-blog.csdnimg.cn/ce0ee59a30d5439bafb001c4abcd0d42.jpg">
 <meta property="article:published_time" content="2021-08-16T10:57:07.409Z">
-<meta property="article:modified_time" content="2021-08-16T11:05:17.563Z">
+<meta property="article:modified_time" content="2021-08-16T11:08:57.844Z">
 <meta property="article:author" content="昨日青空">
 <meta property="article:tag" content="前端，js,vue,javascript,html,css,程序员,工程师,编程,代码,nodejs,electron">
 <meta name="twitter:card" content="summary">
@@ -190,9 +190,8 @@
         <p>@<a href="%E6%96%87%E7%AB%A0%E7%9B%AE%E5%BD%95%EF%BC%9A">TOC</a></p>
 <h3 id="引言"><a href="#引言" class="headerlink" title="引言"></a>引言</h3><p>上周我们组新开项目，技术调研之后决定使用 d3.js 做数据可视化开发，mentor让我来做初期技术调研，之后的技术交流会与大家分享。可是初期的调研着实碰壁了 网上一些demo用的版本过低，包括d3js官网的demo也是如此，一些重要的API已废弃。<br><img src="https://img-blog.csdnimg.cn/5b845439f992446a9e24e73f76f99eaa.jpg" alt="在这里插入图片描述"></p>
 <p>可是我们项目不打算用过低版本，于是我结合网上demo和d3文档，各种谷歌百度，总算是用最新版本实现了一些demo。想到好久没有记录学习到的技术了，趁此机会写下这篇 d3.js可视化开发快速入门博客,与大家交流分享。</p>
-<h3 id="1-D3js-是什么"><a href="#1-D3js-是什么" class="headerlink" title="1. D3js 是什么"></a>1. D3js 是什么</h3><p>近年来，数据可视化越来越流行，许多拥有大量数据的大型网站都开始使用可视化技术，使得大量杂乱的数据规则起来，易于理解，真可谓“一图胜千言”，毫不夸张。正是在这种趋势的催动下，各种数据化工具如井喷式的发展，而D3，Echarts正是其中的佼佼者。</p>
-<span id="more"></span>
-
+<h3 id="1-D3js-是什么"><a href="#1-D3js-是什么" class="headerlink" title="1. D3js 是什么"></a>1. D3js 是什么</h3><span id="more"></span>
+<p>近年来，数据可视化越来越流行，许多拥有大量数据的大型网站都开始使用可视化技术，使得大量杂乱的数据规则起来，易于理解，真可谓“一图胜千言”，毫不夸张。正是在这种趋势的催动下，各种数据化工具如井喷式的发展，而D3，Echarts正是其中的佼佼者。</p>
 <p>D3 的全称是（Data-DrivenDocuments），顾名思义是一个被数据驱动的文档。其实是对数据进行可视化的JavaScript库。D3将强大的可视化和交互技术与数据驱动的DOM操作方法相结合，能最大限度地使用现代浏览器的性能同时为设计可视化界面保留了最大的自由度。D3强调Web标准，所以无需将自己与专有框架联系起来。</p>
 <p>D3js 是一个可以基于数据来操作文档的 JavaScript 库。可以帮助你使用 HTML, CSS, SVG 以及 Canvas 来展示数据。D3 遵循现有的 Web 标准，可以不需要其他任何框架独立运行在现代浏览器中，它结合强大的可视化组件来驱动 DOM 操作。</p>
 <p>D3 可以将数据绑定到 DOM 上，然后根据数据来计算对应 DOM 的属性值。例如你可以根据一组数据生成一个表格。或者也可以生成一个可以过渡和交互的 SVG 图形。</p>

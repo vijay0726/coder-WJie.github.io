@@ -22,7 +22,7 @@
 <meta property="og:image" content="https://img-blog.csdnimg.cn/20210415143814497.gif#pic_center">
 <meta property="og:image" content="https://img-blog.csdnimg.cn/20210415144552674.gif#pic_center">
 <meta property="article:published_time" content="2021-08-16T09:32:34.354Z">
-<meta property="article:modified_time" content="2021-08-16T11:05:17.563Z">
+<meta property="article:modified_time" content="2021-08-16T11:09:24.594Z">
 <meta property="article:author" content="昨日青空">
 <meta property="article:tag" content="前端，js,vue,javascript,html,css,程序员,工程师,编程,代码,nodejs,electron">
 <meta name="twitter:card" content="summary">
@@ -186,11 +186,12 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h2 id="一-HTTP-基本知识"><a href="#一-HTTP-基本知识" class="headerlink" title="一 . HTTP 基本知识"></a>一 . HTTP 基本知识</h2><h3 id="1-HTTP是什么？"><a href="#1-HTTP是什么？" class="headerlink" title="1. HTTP是什么？"></a>1. HTTP是什么？</h3><p>HTTP是超文本传输协议。<br>超文本传输协议就是，【超文本】【传输】【协议】。<br><font color="dpurple">超文本：</font>即指【超越了文本的文本】，是图片，文本，视频，尤其关键的<strong>超链接</strong>等。HTML也是超文本，虽然它本身是文字文件，但它包含了图片，超链接，视频等超文本内容。<br><font color="dpurple">传输：</font>传输很好理解，就像我们将一个东西从A点搬到B点，或从B点搬到A点。<br><font color="blue">可别小看这个简单的动作，它至少包含了两项重要的信息。</font><br><font color="blue">其一，传输是双向的。</font><br>可以从A点到B点，同样也可以从B点到A点。<br>即，浏览器可以向服务器传输信息，服务器也可以向浏览器传输信息。<br><font color="blue">其二，传输可以有中转点。</font><br>信息可以从A点 经C点 最终传输到 B点。<br>就像第一排的同学想将纸条传递给最后一排的同学，中途会经过多次中转（中间人传递），这样【A &lt;-&gt; B】就成了 【A &lt;-&gt; M &lt;-&gt; N &lt;-&gt; V…&lt;-&gt; B】<br><font color="dpurple">协议：</font>协议也不难理解，就像大学毕业会签的三方协议，租房子时签的租房协议。总而言之，协议就是一种 <strong>规范和约定</strong>。<br><font color="red">注意：</font></p>
+        <h2 id="一-HTTP-基本知识"><a href="#一-HTTP-基本知识" class="headerlink" title="一 . HTTP 基本知识"></a>一 . HTTP 基本知识</h2><h3 id="1-HTTP是什么？"><a href="#1-HTTP是什么？" class="headerlink" title="1. HTTP是什么？"></a>1. HTTP是什么？</h3><p>HTTP是超文本传输协议。<br>超文本传输协议就是，【超文本】【传输】【协议】。<br><font color="dpurple">超文本：</font>即指【超越了文本的文本】，是图片，文本，视频，尤其关键的<strong>超链接</strong>等。HTML也是超文本，虽然它本身是文字文件，但它包含了图片，超链接，视频等超文本内容。<br><font color="dpurple">传输：</font>传输很好理解，就像我们将一个东西从A点搬到B点，或从B点搬到A点。<br><font color="blue">可别小看这个简单的动作，它至少包含了两项重要的信息。</font><br><font color="blue">其一，传输是双向的。</font><br>可以从A点到B点，同样也可以从B点到A点。<br>即，浏览器可以向服务器传输信息，服务器也可以向浏览器传输信息。<br><font color="blue">其二，传输可以有中转点。</font></p>
+<span id="more"></span>
+<p>信息可以从A点 经C点 最终传输到 B点。<br>就像第一排的同学想将纸条传递给最后一排的同学，中途会经过多次中转（中间人传递），这样【A &lt;-&gt; B】就成了 【A &lt;-&gt; M &lt;-&gt; N &lt;-&gt; V…&lt;-&gt; B】<br><font color="dpurple">协议：</font>协议也不难理解，就像大学毕业会签的三方协议，租房子时签的租房协议。总而言之，协议就是一种 <strong>规范和约定</strong>。<br><font color="red">注意：</font></p>
 <blockquote>
 <p>那「HTTP 是用于从互联网服务器传输超文本到本地浏览器的协议 ，这种说法正确吗？</p>
 </blockquote>
-<span id="more"></span>
 <p>这种说法是错误的，因为也可以是【服务器 &lt; - &gt; 服务器】<br><font color="blue">最后</font>我们应该这样描述HTTP是什么：<br><font color="dpurple">HTTP是计算机世界里专门在两点之间传输数据的约定和规范。</font></p>
 <h3 id="2-HTTP常见状态码"><a href="#2-HTTP常见状态码" class="headerlink" title="2. HTTP常见状态码"></a>2. HTTP常见状态码</h3><p>常见状态码分为1/2/3/4/5开头…见下表：<br>|#|解释说明  |常见状态码 |<br>|–|–|–|<br>| 1xx | 提示信息，表示处于处理的中间状态，还需要后续操作 | |<br>| 2xx |  表示成功，报文已经收到，并被成功处理   |200 201 202    |<br>| 3xx |    重定向。资源发生改动，需要重新发送请求。  |   301 302 304 |<br>| 4xx |    客户端错误。请求报文有误，服务端无法处理。  |   400 403 404  |<br>| 5xx |     服务端内部错误。服务器在处理请求时，内部发生了错误。 | 500 501 502 503   |</p>
 <h3 id="3-HTTP报文长什么样"><a href="#3-HTTP报文长什么样" class="headerlink" title="3. HTTP报文长什么样"></a>3. HTTP报文长什么样</h3><p>那么HTTP传输的报文到底长什么样？<br>看看菜鸟教程关于http报文<br><img src="https://img-blog.csdnimg.cn/20210414194631989.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80NjU2NzQyOA==,size_16,color_FFFFFF,t_70#pic_center" alt="在这里插入图片描述"><br>实际开发中的报文demo</p>
