@@ -23,7 +23,7 @@
 <meta property="og:image" content="https://img-blog.csdnimg.cn/0a22f706ad904c078fc0bab906951439.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80NjU2NzQyOA==,size_16,color_FFFFFF,t_70">
 <meta property="og:image" content="https://img-blog.csdnimg.cn/ce0ee59a30d5439bafb001c4abcd0d42.jpg">
 <meta property="article:published_time" content="2021-08-16T10:57:07.409Z">
-<meta property="article:modified_time" content="2021-08-16T11:15:35.306Z">
+<meta property="article:modified_time" content="2021-08-17T06:34:38.781Z">
 <meta property="article:author" content="昨日青空">
 <meta property="article:tag" content="前端，js,vue,javascript,html,css,程序员,工程师,编程,代码,nodejs,electron">
 <meta name="twitter:card" content="summary">
@@ -223,15 +223,8 @@
 <td>可以使用CSS 文本渲染能力较强</td>
 <td>文本渲染能力较弱</td>
 </tr>
-<tr>
-<td>简单对比后，可以得出结论：</td>
-<td></td>
-</tr>
-<tr>
-<td>SVG比较适合 数据量不是很大，应用存在大量的用户交互场景。</td>
-<td></td>
-</tr>
 </tbody></table>
+<p>简单对比后，可以得出结论：<br>SVG比较适合 数据量不是很大，应用存在大量的用户交互场景。</p>
 <p>Canvas比较适合事件交与较少，文本较少，或者数据量大画面刷新快的场景。</p>
 <h4 id="2-2-D3-js-对比-Echarts"><a href="#2-2-D3-js-对比-Echarts" class="headerlink" title="2.2 D3.js 对比 Echarts"></a>2.2 D3.js 对比 Echarts</h4><table>
 <thead>
@@ -268,15 +261,8 @@
 <td>提供基于WebGl的GL版实现3D图表</td>
 <td>借助其他库来实现例如：three.js、glMatrix、Sylvester</td>
 </tr>
-<tr>
-<td><strong>总结</strong>：</td>
-<td></td>
-</tr>
-<tr>
-<td>ECharts等提供的图表的确可以满足大部分的需求，遵循了数据可视化的一些经典范式，一切皆可配置。然而，每个不同的行业对于数据可视化都会有一些定制化的需求，希望能以一些带有行业特征的图表向使用者展示数据背后隐藏的秘密，但是ECharts这类图形库基本不可定制，而D3自由度度很大，基本可以自己绘制任何想要的图形，这类情况的需求可以使用D3进行二次开发，定制适合的图表，但是开发成本会稍高。因此，开发中要根据实际情况来判断。无论采用哪种方式开发都要做好二次封装，把实现的图表成可复用的组件。</td>
-<td></td>
-</tr>
 </tbody></table>
+<p><strong>总结</strong>：<br>ECharts等提供的图表的确可以满足大部分的需求，遵循了数据可视化的一些经典范式，一切皆可配置。然而，每个不同的行业对于数据可视化都会有一些定制化的需求，希望能以一些带有行业特征的图表向使用者展示数据背后隐藏的秘密，但是ECharts这类图形库基本不可定制，而D3自由度度很大，基本可以自己绘制任何想要的图形，这类情况的需求可以使用D3进行二次开发，定制适合的图表，但是开发成本会稍高。因此，开发中要根据实际情况来判断。无论采用哪种方式开发都要做好二次封装，把实现的图表成可复用的组件。</p>
 <p>ECharts，hightchart这类可视化库，经过配置即可完成图表的绘制，D3要稍微麻烦一点。</p>
 <p><strong>使用D3绘图需要</strong>：</p>
 <ul>
